@@ -13,8 +13,8 @@
 		D07FA688204E97D70063B480 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D07FA687204E97D70063B480 /* Assets.xcassets */; };
 		D07FA68B204E97D70063B480 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D07FA689204E97D70063B480 /* LaunchScreen.storyboard */; };
 		D07FA68E204E97D70063B480 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D07FA68D204E97D70063B480 /* main.m */; };
-		D07FA69B204E97FF0063B480 /* SignalHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D07FA696204E97FF0063B480 /* SignalHandler.m */; };
-		D07FA69C204E97FF0063B480 /* UncaughtExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D07FA698204E97FF0063B480 /* UncaughtExceptionHandler.m */; };
+		D0E75A9F204EBFE900930A1B /* SignalHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E75A9C204EBFE800930A1B /* SignalHandler.m */; };
+		D0E75AA0204EBFE900930A1B /* UncaughtExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E75A9D204EBFE800930A1B /* UncaughtExceptionHandler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,10 +28,10 @@
 		D07FA68A204E97D70063B480 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D07FA68C204E97D70063B480 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D07FA68D204E97D70063B480 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D07FA695204E97FF0063B480 /* UncaughtExceptionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UncaughtExceptionHandler.h; sourceTree = "<group>"; };
-		D07FA696204E97FF0063B480 /* SignalHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignalHandler.m; sourceTree = "<group>"; };
-		D07FA698204E97FF0063B480 /* UncaughtExceptionHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UncaughtExceptionHandler.m; sourceTree = "<group>"; };
-		D07FA699204E97FF0063B480 /* SignalHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignalHandler.h; sourceTree = "<group>"; };
+		D0E75A9B204EBFE800930A1B /* UncaughtExceptionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UncaughtExceptionHandler.h; sourceTree = "<group>"; };
+		D0E75A9C204EBFE800930A1B /* SignalHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignalHandler.m; sourceTree = "<group>"; };
+		D0E75A9D204EBFE800930A1B /* UncaughtExceptionHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UncaughtExceptionHandler.m; sourceTree = "<group>"; };
+		D0E75A9E204EBFE800930A1B /* SignalHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignalHandler.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +64,7 @@
 		D07FA67D204E97D40063B480 /* UncaughtException */ = {
 			isa = PBXGroup;
 			children = (
-				D07FA694204E97FF0063B480 /* CrashHelp */,
+				D0E75A9A204EBFE800930A1B /* CrashHelp */,
 				D07FA67E204E97D40063B480 /* AppDelegate.h */,
 				D07FA67F204E97D40063B480 /* AppDelegate.m */,
 				D07FA681204E97D40063B480 /* ViewController.h */,
@@ -78,16 +78,15 @@
 			path = UncaughtException;
 			sourceTree = "<group>";
 		};
-		D07FA694204E97FF0063B480 /* CrashHelp */ = {
+		D0E75A9A204EBFE800930A1B /* CrashHelp */ = {
 			isa = PBXGroup;
 			children = (
-				D07FA695204E97FF0063B480 /* UncaughtExceptionHandler.h */,
-				D07FA698204E97FF0063B480 /* UncaughtExceptionHandler.m */,
-				D07FA699204E97FF0063B480 /* SignalHandler.h */,
-				D07FA696204E97FF0063B480 /* SignalHandler.m */,
+				D0E75A9B204EBFE800930A1B /* UncaughtExceptionHandler.h */,
+				D0E75A9C204EBFE800930A1B /* SignalHandler.m */,
+				D0E75A9D204EBFE800930A1B /* UncaughtExceptionHandler.m */,
+				D0E75A9E204EBFE800930A1B /* SignalHandler.h */,
 			);
-			name = CrashHelp;
-			path = "../../../Downloads/iOSCrashUncaught-master/UncaughtExceptionDemo/CrashHelp";
+			path = CrashHelp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,9 +160,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D07FA683204E97D40063B480 /* ViewController.m in Sources */,
-				D07FA69C204E97FF0063B480 /* UncaughtExceptionHandler.m in Sources */,
+				D0E75AA0204EBFE900930A1B /* UncaughtExceptionHandler.m in Sources */,
 				D07FA68E204E97D70063B480 /* main.m in Sources */,
-				D07FA69B204E97FF0063B480 /* SignalHandler.m in Sources */,
+				D0E75A9F204EBFE900930A1B /* SignalHandler.m in Sources */,
 				D07FA680204E97D40063B480 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
